@@ -1,1 +1,23 @@
 /*css*/
+/*Regras para todo o site*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #bfbfbf;
+}
+::-webkit-scrollbar-thumb {
+    background: #636363;
+    border-radius: 5px;
+}  
+::-webkit-scrollbar-thumb:hover {
+    background: #242424;
+} 
+.espaço {
+    width: 1800px;
+    height: 1800px;
+}

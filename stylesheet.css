@@ -1,8 +1,8 @@
 /*css*/
 /*Regras para todo o site*/
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -17,7 +17,45 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #242424;
 } 
-.espaço {
-    width: 1800px;
-    height: 1800px;
+/*teste de grid*/
+.grid-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6vh 70vh 20vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-row-gap: 10px;
 }
+header {
+    background-color: red;
+    grid-area: header;
+}
+main {
+    background-color: #242424;
+    grid-area: main;
+}
+footer {
+    background-color: aqua;
+    grid-area: footer;
+}
+
+/* Barra de navegação */
+
+nav {
+    
+}
+nav ul {
+    
+}
+nav ul li {
+    display: inline;
+    list-style: none;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* para testes de conteudo*/

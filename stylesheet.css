@@ -26,7 +26,7 @@ body {
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px auto 200px;
+    grid-template-rows: 50px auto 300px;
     grid-template-areas: 
     "header"
     "main"
@@ -87,14 +87,12 @@ nav ul li a:hover {
 /*footer grid*/
 footer {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 50px;
     grid-template-areas: 
-    "a"
     "ful-1"
-    "ful-2"
-    "a";
+    "ful-2";
+    justify-items: center;
 }
 footer ul {
     padding: 0;
@@ -111,7 +109,7 @@ footer ul li {
 }
 /* para testes de conteudo*/
 .grande {
-    height: 1800px;
+    height: 18px;
 }
 /*ideias
 masking css para logo

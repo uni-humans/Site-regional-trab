@@ -26,7 +26,7 @@ body {
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px auto auto 300px;
+    grid-template-rows: 50px 300px auto 300px;
     grid-template-areas: 
     "header"
     "landing"
@@ -88,17 +88,27 @@ nav ul li a:hover {
     right: 10px;
 }
 
-/*lv = section*/
-#lVideo {
+/*lv = section 
+object-fit: cover;
+overflow: hidden;
+*/
+.landingb {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    z-index: -1;
+    height: 100%;
     overflow: hidden;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.testt {
-    z-index: 2;
+.landingb video {
+    object-fit: cover;
+    width: 100%;
+}
+.landingb .texto {
+    position: absolute;
+    color: antiquewhite;
+    z-index: 1;
+    margin: 0 auto;
     text-align: center;
 }
 /*footer grid*/

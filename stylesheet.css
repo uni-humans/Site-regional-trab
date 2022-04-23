@@ -130,26 +130,22 @@ overflow: hidden;
 }
 /*footer grid*/
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "ful-1"
-    "ful-2";
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
 }
-footer ul {
-    padding: 0;
+.titulo1 {
+    flex-grow: 3;
 }
-footer ul li {
-    display: inline;
-    list-style: none;
+.titulo2 {
+    flex-grow: 1;
 }
-.ful-1 {
-    grid-area: ful-1;
-}
-.ful-2 {
-    grid-area: ful-2;
+.titulo3 {
+    flex-grow: 1;
 }
 /* para testes de conteudo*/
 .grande {

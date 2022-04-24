@@ -1,12 +1,9 @@
 /*css*/
 /*Regras para todo o site*/
-body {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -36,7 +33,23 @@ body {
     ;
     align-content: stretch;
     justify-content: stretch;
+    overflow-x: hidden;
 }
+header {
+    grid-area: header;
+}
+.landing {
+    background-color: #242424; 
+    grid-area: landing;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+
+/* Barra de navegação*/
 header {
     background-color: #242424; 
     position: fixed;
@@ -44,40 +57,13 @@ header {
     height: 70px;
     width: 100%;
     transition: top 0.7s;
-    grid-area: header;
     z-index: 2;
-}
-.landing {
-    grid-area: landing;
-    background-color: #242424;
-}
-main {
-    background-color: #242424;
-    grid-area: main;
-}
-footer {
-    background-color: aqua;
-    grid-area: footer;
-}
-
-/* Barra de navegação 
-header {
-    display: grid;
-    grid-template-columns: 55px 97%;
-    grid-column-gap: 10px;
-}
-.logo {
-    margin-left: 5px;
-    height: 50px;
-    width: 50px;
-}
-*/
-header {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
+
 /*dependendo do tamanho da logo vai ter que mudar aki e no scrip da barra tbm*/
 .logo {
     margin-top: 40px;
@@ -128,24 +114,64 @@ overflow: hidden;
     margin: 0 auto;
     text-align: center;
 }
+/*main*/
+main {
+    background-color: #381f36; 
+}
 /*footer grid*/
 footer {
+    background-color: #242424; 
+    padding: 50px 0;
+    
+}
+footer ul {
+    list-style: none;
+}
+.F-objeto {
+    max-width: 1170px;
+    margin: auto;
+}
+.F-linha {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.F-coluna {
+    width: 25%;
+    padding: 0 15px;
+}
+.F-coluna h1 {
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+.F-coluna h1::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 40px;
+    background-color: red;
+    box-sizing: border-box;
+}
+.F-coluna ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.F-coluna ul li a {
     color: #fff;
-    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    text-transform: capitalize;
 }
-.titulo1 {
-    flex-grow: 3;
+.F-coluna ul li a:hover {
+    transition: 0.5s;
+    color: aqua;
 }
-.titulo2 {
-    flex-grow: 1;
-}
-.titulo3 {
-    flex-grow: 1;
+.F-logo {
+    height: 150px;
+    width: 150px;
 }
 /* para testes de conteudo*/
 .grande {

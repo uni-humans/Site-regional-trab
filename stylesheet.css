@@ -24,7 +24,7 @@ body {
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 500px auto 300px;
+    grid-template-rows: auto 500px auto auto;
     grid-template-areas: 
     "header"
     "landing"
@@ -85,9 +85,9 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 nav ul li a:hover {
-    transition: 0.5s;
     color: aqua;
 }
 /*lv = section 
@@ -164,15 +164,29 @@ footer ul {
     color: #fff;
     text-decoration: none;
     text-transform: capitalize;
+    display: block;
+    transition: all 0.3s ease;
 }
 .F-coluna ul li a:hover {
-    transition: 0.5s;
     color: aqua;
+    padding-left: 10px;
 }
 .F-logo {
     height: 150px;
     width: 150px;
 }
+/*responsividade*/
+ @media(max-width: 767px){
+    .F-coluna {
+        width: 50%;
+        margin-bottom: 30px;
+    } 
+ }
+ @media(max-width: 574px){
+    .F-coluna {
+        width: 100%;
+    } 
+ }
 /* para testes de conteudo*/
 .grande {
     height: 1800px;
@@ -180,3 +194,4 @@ footer ul {
 /*ideias
 masking css para logo
 */
+

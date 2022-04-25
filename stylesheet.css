@@ -24,7 +24,7 @@ body {
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 500px auto auto;
+    grid-template-rows: auto minmax(auto, 500px) auto auto;
     grid-template-areas: 
     "header"
     "landing"
@@ -95,8 +95,8 @@ object-fit: cover;
 overflow: hidden;
 */
 .landingb {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -117,6 +117,29 @@ overflow: hidden;
 /*main*/
 main {
     background-color: #381f36; 
+}
+.M-objeto {
+    margin: auto;
+    max-width: 50em;
+    
+}
+.M-linha {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr;
+}
+.M-coluna {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(2, 1fr);
+}
+.M-imagem {
+    width: 400px;
+    height: 400px;
+    
+}
+.testm {
+    grid-row: span 2;
 }
 /*footer grid*/
 footer {
@@ -172,8 +195,8 @@ footer ul {
     padding-left: 10px;
 }
 .F-logo {
-    height: 150px;
-    width: 150px;
+    max-height: 150px;
+    max-width: 150px;
 }
 /*responsividade*/
  @media(max-width: 767px){
@@ -185,7 +208,7 @@ footer ul {
  @media(max-width: 574px){
     .F-coluna {
         width: 100%;
-    } 
+    }
  }
 /* para testes de conteudo*/
 .grande {

@@ -118,35 +118,11 @@ overflow: hidden;
 main {
     background-color: #381f36; 
 }
-.M-objeto {
-    margin: auto;
-    max-width: 50em;
-    
-}
-.M-linha {
-    display: grid;
-    gap: 1.5em;
-    grid-template-columns: 1fr;
-}
-.M-coluna {
-    display: grid;
-    gap: 1.5em;
-    grid-template-columns: repeat(2, 1fr);
-    
-}
-.M-imagem {
-    width: 400px;
-    height: 400px;
-    
-}
-.testm {
-    grid-row: span 2;
-}
+
 /*footer grid*/
 footer {
     background-color: #242424; 
     padding: 50px 0;
-    
 }
 footer ul {
     list-style: none;
@@ -159,7 +135,6 @@ footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 .F-coluna {
     width: 25%;

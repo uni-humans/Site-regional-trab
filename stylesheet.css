@@ -132,6 +132,7 @@ main {
     display: grid;
     gap: 1.5em;
     grid-template-columns: repeat(2, 1fr);
+    
 }
 .M-imagem {
     width: 400px;

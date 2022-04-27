@@ -54,7 +54,7 @@ header {
     background-color: #242424; 
     position: fixed;
     top: 0;
-    height: 70px;
+    height: 70px; /*change to 70px*/
     width: 100%;
     transition: top 0.7s;
     z-index: 2;
@@ -88,6 +88,35 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 nav ul li a:hover {
+    color: aqua;
+}
+/*droopdown*/
+.droopdown-grid-objeto:hover .droopdown-grid-items, .droopdown-grid-items:hover {
+    display: inline-flex;
+}
+.droopdown-grid-items {
+    display: none;
+    position: fixed;
+    right: 3.7em;
+    flex-direction: column;
+    margin-top: 2.7em;
+    padding-bottom: 10px;
+    background-color: #242424;
+    border-radius: 0 0 15px 15px;
+    gap: 5px;
+}
+.droopdown-grid-objeto {
+    padding-bottom: 2.6em;
+}
+.droopdown-grid-items li {
+    list-style: none;
+}
+.droopdown-grid-items li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.droopdown-grid-items li a:hover {
     color: aqua;
 }
 /*lv = section 
@@ -188,6 +217,9 @@ footer ul {
  }
 /* para testes de conteudo*/
 .grande {
+    height: 1800px;
+}
+main {
     height: 1800px;
 }
 /*ideias

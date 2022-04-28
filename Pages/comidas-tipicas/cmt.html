@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
+        <!-- Titulo site -->
         <title>Comidas Típicas - Campos do Jordão</title>
+
+        <!-- Metadados -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../../imagens/Sem título.png"> <!-- icone da aba do site -->
         <meta property="og:title" content="Comidas Típicas - Campos do Jordão"/> <!-- Og:title é onde você coloca o título de seu conteúdo. -->
         <meta property="og:type" content="website"/>
         <meta property="og:url" content=""/> <!-- Nesta tag, você deve colocar a URL da página que você está compartilhando -->
@@ -14,27 +17,36 @@
         <meta property="og:site_name" content=""/> <!-- Esta tag informa qual é o nome do seu site. não é realmente necessario, mas não há mal em incluí-la. -->
         <meta name="theme-color" content=""/> <!-- isso definira a cor tema do card do seu site quando for compartilhado -->
         <meta name="twitter:card" content="summary"> <!-- Este meta tag descreve o tipo de conteúdo que você está compartilhando. possuindo três opções pelo Twitter, diferentemente do Facebook essas opções são photo (para imagens), player (para vídeos) e Summary (para todo o resto). -->
+
+        <!-- Links/ Scripts -->
         <script src="cmt-script.js"></script> <!-- faz link com o script das pastas que compoe  -->
+        <link rel="icon" href="../../imagens/Sem título.png"> <!-- icone da aba do site -->
         <link rel="stylesheet" type="text/css" href="cmt.css"/>
     </head>
+
     <body>
             <header id="header">
-                <img src="/imagens/Sem título.png" class="logo">
+                <a href="../../index.html"><img src="/imagens/Sem título.png" class="logo" alt="Logo site"></a>
+                
                 <nav>
                     <ul>
-                        <li><a class="" href="../../index.html">Inicio</a></li> 
+                        <li><a href="../../index.html">Inicio</a></li> 
+
+                        <!-- droopdown comidas tipicas e pontos turisticos -->
                         <li class="droopdown-grid-objeto"><a href="">Paginas</a>
                             <ul class="droopdown-grid-items">
-                                <li class=""><a class="" href="#Sobre">Sobre</a></li>
-                                <li class=""><a class="" href="cmt.html">Comidas típicas</a></li>
-                                <li class=""><a class="" href="../pontos-turisticos/ptt.css">Pontos turísticos</a></li>
+                                <li class=""><a href="#Sobre">Sobre</a></li>
+                                <li class=""><a href="cmt.html">Comidas típicas</a></li>
+                                <li class=""><a href="../pontos-turisticos/ptt.css">Pontos turísticos</a></li>
                             </ul>
-                        </li> <!-- droopdown comidas tipicas e pontos turisticos -->
+                        </li> 
+
                         <li><a class="" href="#Contato">Contato</a></li>
+                    </ul>
                 </nav>
             </header>
 
-            <main>
+            <main id="Sobre">
                 
             </main>
             
@@ -83,5 +95,6 @@
                     </div>
                 </div>
             </footer>
+
     </body>
 </html>

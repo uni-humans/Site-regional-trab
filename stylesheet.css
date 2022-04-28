@@ -5,6 +5,20 @@
     margin: 0;
     padding: 0;
 }
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+p, a{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -94,15 +108,16 @@ nav ul li a:hover {
 .droopdown-grid-objeto:hover .droopdown-grid-items, .droopdown-grid-items:hover {
     display: inline-flex;
 }
-.droopdown-grid-items {
-    display: none;
+.droopdown-grid-items { /*abaixo de 425px quebra */
+    display: none; /*alterar para none*/
     position: fixed;
-    right: 3.7em;
+    right: 0;
+    width: 12.2em;
     flex-direction: column;
     margin-top: 2.7em;
     padding-bottom: 10px;
     background-color: #242424;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 0 15px;
     gap: 5px;
 }
 .droopdown-grid-objeto {
@@ -144,9 +159,7 @@ overflow: hidden;
     text-align: center;
 }
 /*main*/
-main {
-    background-color: #381f36; 
-}
+
 
 /*footer grid*/
 footer {

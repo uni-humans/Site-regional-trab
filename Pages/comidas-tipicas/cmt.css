@@ -17,7 +17,23 @@
 }  
 ::-webkit-scrollbar-thumb:hover {
     background: #242424;
-} 
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+p, a{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+
 /*modelo do index grid*/
 body {
     display: grid;
@@ -69,7 +85,6 @@ header {
     margin-top: 40px;
     margin-left: 3em;
     height: 120px;
-    width: 100px;
 }
 nav {
     margin-right: 50px;
@@ -122,7 +137,54 @@ nav ul li a:hover {
 
 /*main*/
 main {
-    background-color: #381f36; 
+    background-color: white; 
+}
+
+.web-title{
+    text-align: center;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+/*Main sections*/
+section h2{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 4rem;
+}
+
+.section-1{
+    background-color: hsl(0 0% 97%);
+}
+
+.div-style{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 3rem 0rem 3rem;
+    padding-bottom: 4rem;
+}
+
+.div-style img{
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.div-style p{
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.divider-1{
+    height: 1px;
+    background: linear-gradient(90deg, rgba(137,62,149,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.divider-2{
+    height: 1px;
+    background: linear-gradient(270deg, rgba(137,62,149,1) 0%, rgba(255,255,255,0) 100%);
 }
 
 /*footer grid*/

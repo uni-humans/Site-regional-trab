@@ -17,6 +17,9 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #242424;
 }
+/* :root {
+    --dark: #242424;
+} testar depois variaveis de cor  */
 h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -26,7 +29,6 @@ h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-
 p, a{
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
@@ -74,8 +76,8 @@ nav ul li a:hover {
 .droopdown-grid-objeto:hover .droopdown-grid-items, .droopdown-grid-items:hover {
     display: inline-flex;
 }
-.droopdown-grid-items { /*abaixo de 425px quebra */
-    display: none; /*alterar para none*/
+.droopdown-grid-items {
+    display: none; 
     position: fixed;
     right: 0;
     width: 12.5em;
@@ -87,7 +89,7 @@ nav ul li a:hover {
     gap: 5px;
 }
 .droopdown-grid-objeto {
-    padding-bottom: 2.6em;
+    padding-bottom: 1.7em;
 }
 .droopdown-grid-items li {
     list-style: none;
@@ -155,7 +157,7 @@ footer ul {
     max-height: 150px;
     max-width: 150px;
 }
-/*responsividade*/
+/*responsividade index*/
  @media(max-width: 767px){
     .F-coluna {
         width: 50%;
@@ -166,4 +168,27 @@ footer ul {
     .F-coluna {
         width: 100%;
     }
+ }
+
+ /*responsividade cmt*/
+ @media(max-width: 768px){
+    .div-style {
+        grid-auto-flow: row;
+    }
+    section h2 {
+        text-align: center;
+    }
+    .div-style p {
+        text-align: left;
+    }
+ }
+ @media(max-width: 550px){
+    .div-style {
+        justify-items: center;
+    }
+ }
+ @media(max-width: 768px){
+    .div-style p {
+        text-align: justify;
+}
  }

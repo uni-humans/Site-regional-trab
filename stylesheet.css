@@ -29,8 +29,6 @@ main {
 footer {
     grid-area: footer;
 }
-
-
 /*lv = section 
 object-fit: cover;
 overflow: hidden;
@@ -46,7 +44,7 @@ overflow: hidden;
 .landingb video {
     object-fit: cover;
     width: 100%;
-    filter: blur(5px);
+    filter: blur(3px);
 }
 .landingb .texto {
     position: absolute;

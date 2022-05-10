@@ -1,6 +1,5 @@
-//script
-//transição da barra de navegação
 
+//transição da barra de navegação
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
@@ -10,5 +9,10 @@ var currentScrollPos = window.pageYOffset;
     document.getElementById("header").style.top = "-120px";
   }
   prevScrollpos = currentScrollPos;
+}
+//mudar thema
+function botao() {
+  var dark = document.body
+  dark.classList.toggle("dark")
 }
 

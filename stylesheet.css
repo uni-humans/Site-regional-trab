@@ -1,4 +1,5 @@
 /*modelo do index grid*/
+
 body {
     display: grid;
     width: 100vw;
@@ -40,6 +41,7 @@ overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .landingb video {
     object-fit: cover;
@@ -48,7 +50,7 @@ overflow: hidden;
 }
 .landingb .texto {
     position: absolute;
-    color: rgb(255, 255, 255);
+    color: #fff;
     z-index: 1;
     margin: 0 auto;
     text-align: center;
@@ -60,7 +62,9 @@ overflow: hidden;
 }
 main {
     height: 1800px;
+    background-color: var(--background-color);
 }
+
 /*ideias
 masking css para logo
 */

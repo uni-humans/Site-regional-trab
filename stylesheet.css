@@ -29,7 +29,7 @@ main {
 }
 footer {
     grid-area: footer;
-}
+} 
 /*lv = section 
 object-fit: cover;
 overflow: hidden;

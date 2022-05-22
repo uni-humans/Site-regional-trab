@@ -16,8 +16,7 @@
         <meta name="theme-color" content=""/> 
         <meta name="twitter:card" content="summary"> 
         <!-- Links/ Scripts -->
-        <script src="script.js"></script>
-        <script src="regras-globais/global.js"></script>
+        <!-- <script src="regras-globais/global.js"></script> -->
         <link rel="icon" href="arquivos/index-arquivos/Sem título.png"> 
         <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
         <link rel="stylesheet" type="text/css" href="regras-globais/global.css">
@@ -25,33 +24,51 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-        <!-- icons -->
-        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     </head>
     <body>
+        <div id="header-animation">
             <header id="header">
-                <nav>
-                    <h1><span class="material-symbols-sharp">
-                        explore
-                        </span> Lorem, <span style="color: tomato;">ipsum.</span>
-                    </h1>
-                    <ul>
-                        <li><a class="" href="index.html">Inicio</a></li> 
-                        <li class="droopdown-grid-objeto" id="Paginas"><a>Paginas</a>
-                            <ul class="droopdown-grid-items" id="droopdown-grid-items">
-                                <li class=""><a class="" href="#Sobre">Sobre</a></li>
-                                <li class=""><a class="" href="Pages/comidas-tipicas/cmt.html">Comidas típicas</a></li>
-                                <li class=""><a class="" href="Pages/pontos-turisticos/ptt.html">Pontos turísticos</a></li>
-                            </ul>
-                        </li> <!-- droopdown comidas tipicas e pontos turisticos -->
-                        <li><a href="#">Contato</a><span class="material-symbols-sharp">
-                            brightness_5
-                            </span></li>
-                        
-                    </ul>
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-compass" viewBox="0 0 16 16">
+                    <path id="header-style" d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+                  </svg> Lorem, <span id="header-style">ipsum.</span>
+                </h1>
+                <nav id="nav">
+                    <button id="mobile-menu">
+                        <span id="mobile-span"></span>
+                    </button>
+                    <ul id="menu">
+                    <li><a class="" href="index.html">Inicio</a></li> 
+                    <div id="Paginas">
+                      <li class="droopdown-grid-objeto"><a class="pag-bottom">Paginas</a>
+                          <ul class="droopdown-grid-items" id="droopdown-grid-items">
+                            <li class=""><a class="" href="#Sobre">Sobre</a></li>
+                            <li class=""><a class="" href="Pages/comidas-tipicas/cmt.html">Comidas típicas</a></li>
+                            <li class=""><a class="" href="Pages/pontos-turisticos/ptt.html">Pontos turísticos</a>
+                            </li>  
+                          </ul>
+                        </li>
+                    </div>
+                    
+                    <div id="paginas-mobile">
+                      <li class=""><a class="" href="#Sobre">Sobre</a></li>
+                      <li class=""><a class="" href="Pages/comidas-tipicas/cmt.html">Comidas típicas</a></li>
+                      <li class=""><a class="" href="Pages/pontos-turisticos/ptt.html">Pontos turísticos</a></li>
+                    </div>
+                    <li><a href="#Contato">Contato</a></li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="moon" onclick="moon()" class="bi bi-moon-stars" viewBox="0 0 16 16">
+                        <path id="moon" d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                        </svg>
+                    </li>
+                    
+                </ul>
                 </nav>
+            <script src="regras-globais/global.js"></script>
             </header>
+        </div>
             <div class="landing">
                 <div class="landingb">
                     <video autoplay muted loop>
@@ -72,19 +89,25 @@
                     <div class="F-linha">
                         <div class="F-coluna">
                             <div>
-                                <h1>Lorem.</h1>
-                                <img class="F-logo" src="arquivos/index-arquivos/Sem título.png">
+                                <h1><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-compass" viewBox="0 0 16 16">
+                                    <path id="header-style" d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                    <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+                                  </svg> Lorem, <span id="header-style">ipsum.</span>
+                                </h1>
+                                <ul>
+                                    <li class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non perferendis, soluta sequi ipsa architecto inventore quibusdam mollitia adipisci vero obcaecati?</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="F-coluna">
                             <div class="F-items">
                                 <h1>Lorem, ipsum dolor.</h1>
                                 <ul>
-                                    <li><a href="#">teste</a></li>
-                                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-                                    <li><a href="#">Lorem, ipsum dolor.</a></li>
-                                    <li><a href="#">Lorem, ipsum.</a></li>
-                                </ul>
+                                    <li>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut reprehenderit velit accusamus officiis. Enim suscipit eaque voluptatibus consequatur ullam possimus.
+                                    </li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul> 
                             </div>
                         </div>
                         <div class="F-coluna">

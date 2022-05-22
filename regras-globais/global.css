@@ -18,7 +18,14 @@
     background: #242424;
 }
 :root {
-    --background-color: #fff;
+    /*pagina*/
+    --white-background-color: #fff;
+    --gray-background-color: #242424;
+    --text-color: #fff;
+    /*detalhes*/
+    --link-color: #fff;
+    --tomato-color: tomato;
+    --hover-link-color: aqua;
 }
 .dark {
     --background-color: #000;
@@ -37,76 +44,184 @@ p, a{
     font-weight: 400;
 }
 /* Barra de navegação*/
-header {
-    background-color: #242424; 
+  #header-style {
+    color: var(--tomato-color);
+  }
+  #header-animation {
     position: fixed;
+    width: 100%;
     top: 0;
-    height: 70px; /*change to 70px*/
-    width: 100%;
     transition: top 0.7s;
-    z-index: 2;
-    
-}
-/*dependendo do tamanho da logo vai ter que mudar aki e no scrip da barra tbm*/
-
-nav {
-    height: 70px; /*change to 70px*/
-    width: 100%;
-    z-index: 2;
+    z-index: 3;
+  }
+  #header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
     display: flex;
-    align-self: center;
-    justify-content: space-between;
     align-items: center;
-}
-nav ul {
-    padding: 0;
-}
-nav ul li {
-    display: inline;
+    justify-content: space-between;
+    background: var(--gray-background-color);
+    z-index: 2;
+  }
+  
+  #moon {
+    cursor: pointer;
+  }
+  #menu {
+    display: flex;
     list-style: none;
-    margin: 1px 10px;
-}
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-nav ul li a:hover {
-    color: aqua;
-}
-/*droopdown*/
-.droopdown-grid-objeto:hover .droopdown-grid-items, .droopdown-grid-items:hover {
-    display: inline-flex;
-}
-.droopdown-grid-items {
-    display: none; 
+    gap: 0.5rem;
+    align-items: center;
+  }
+  /*droopdown*/
+  .droopdown-grid-objeto:hover .droopdown-grid-items, .droopdown-grid-items:hover {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 300ms;
+  }
+  .droopdown-grid-items {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
     position: fixed;
+    display: inline-flex;
     right: 0;
-    width: 12.5em;
+    width: 10em;
     flex-direction: column;
     margin-top: 2.7em;
     padding-bottom: 10px;
-    background-color: #242424;
+    background-color: var(--gray-background-color);
     border-radius: 0 0 0 15px;
     gap: 5px;
-}
-.droopdown-grid-objeto {
-    padding-bottom: 1.7em;
-}
-.droopdown-grid-items li {
+    box-sizing: border-box;
+    background-color: #242424;
+    margin: 0;
+    top: 4.3em;
+  }
+  .pag-bottom {
+    cursor: pointer;
+    padding-bottom: 1.6em;
+  }
+  .droopdown-grid-items li {
     list-style: none;
-}
-.droopdown-grid-items li a {
-    color: #ffffff;
+    margin: 0 0 .1em .5em;
+  }
+  .droopdown-grid-items li:first-child {
+    margin-top: .5em;
+  }
+  .droopdown-grid-items li a {
+    color: #fff;
     text-decoration: none;
     transition: all 0.3s ease;
-}
-.droopdown-grid-items li a:hover {
-    color: aqua;
-}
+  }
+  .droopdown-grid-items li a:hover {
+    color: var(--hover-link-color);
+  }
+  /*end droopdown*/
+  
+  
+  #mobile-menu {
+    display: none;
+  }
+  /*paginas mob e web*/
+  Paginas {
+    display: block;
+  }
+  #paginas-mobile {
+    display: none;
+  }
+  #menu a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  @media (max-width: 600px) {
+    *:not(#moon) {
+      margin: 0;
+      padding: 0;
+  }
+  .landing {
+    position: relative;
+    top: 4.3em;
+  }
+  #menu a, #moon {
+      display: block;
+      padding: 0.5rem;
+    }
+
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: var(--gray-background-color);
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+      
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+  
+    #menu a, #moon {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #mobile-menu {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    #mobile-span {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #mobile-span::after, #mobile-span::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #mobile-span {
+      border-top-color: transparent;
+    }
+    #nav.active #mobile-span::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #mobile-span::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    /*paginas mob e web*/
+    #Paginas {
+      display: none;
+    }
+    #paginas-mobile {
+      display: block;
+    }
+    a:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  }
 /*footer grid*/
 footer {
-    background-color: #242424; 
+    background-color: var(--gray-background-color); 
     padding: 50px 0;
 }
 footer ul {
@@ -126,7 +241,7 @@ footer ul {
     padding: 0 15px;
 }
 .F-coluna h1 {
-    color: #ffffff;
+    color: var(--text-color);
     text-transform: capitalize;
     margin-bottom: 30px;
     position: relative;
@@ -145,14 +260,19 @@ footer ul {
     margin-bottom: 10px;
 }
 .F-coluna ul li a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     text-transform: capitalize;
     display: block;
     transition: all 0.3s ease;
 }
+.F-coluna ul li {
+    color: var(--text-color);
+    text-transform: capitalize;
+    display: block;
+}
 .F-coluna ul li a:hover {
-    color: aqua;
+    color: var(--hover-link-color);
     padding-left: 10px;
 }
 .F-logo {

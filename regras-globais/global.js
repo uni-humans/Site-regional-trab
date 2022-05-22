@@ -1,4 +1,4 @@
-
+//transição da barra de navegação
  var prevScrollpos = window.pageYOffset;
 
  window.onscroll = function() {
@@ -12,18 +12,14 @@
    prevScrollpos = currentScrollPos;
  }
 
-
-//transição da barra de navegação
-
-
-
-//mudar thema
+ //mudar thema
 
 function moon() {
   var dark = document.body
   dark.classList.toggle("dark")
 }
 
+//menu para o mobile
 
 const mobileMenu = document.getElementById('mobile-menu');
 mobileMenu.addEventListener('click', toggleMenu);

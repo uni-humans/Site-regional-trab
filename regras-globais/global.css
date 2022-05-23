@@ -16,7 +16,7 @@
     border-radius: 5px;
 }  
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--logo-color);
+    background: #242424;
 }
 :root {
   --hue: 9;
@@ -106,10 +106,6 @@ p, a{
   gap: 0.5rem;
   align-items: center;
 }
-/*MUDANÇAS MUITO ESPECIFICAS*/
-.travel {
-  padding-left: .2em;
-}
 /* -- DROPDOWN MENU -- */
   .droopdown-grid-objeto:hover .droopdown-grid-items, .droopdown-grid-items:hover {
     visibility: visible;
@@ -167,7 +163,7 @@ p, a{
     font-family: sans-serif;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     header:not(#moon) {
       margin: 0;
       padding: 0;
@@ -319,3 +315,23 @@ footer ul {
     max-width: 150px;
 }
 /* -- END -- */
+
+/* medium devices: 400 > */
+@media (min-width: 400px){
+  /* SEM NECESSIDADE DE ALTERAÇÃO*/
+}
+
+/* medium devices: 767 > */
+@media (min-width: 767px){
+  /* SEM NECESSIDADE DE ALTERAÇÃO*/
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px){
+  /* SEM NECESSIDADE DE ALTERAÇÃO*/
+}
+
+/* large devices: 1023 > */
+@media (min-width: 1023px){
+    /* SEM NECESSIDADE DE ALTERAÇÃO*/
+}

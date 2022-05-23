@@ -86,21 +86,6 @@ section h2{
     background: linear-gradient(270deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
 }
 
-/* large devices: 1023 > */
-@media (min-width: 1023px){
-
-}
-
-/* large devices: 992 > */
-@media (min-width: 992px){
-
-}
-  
-/* medium devices: 767 > */
-@media (min-width: 767px){
-
-}
-
 /* medium devices: 400 > */
 @media (min-width: 400px){
     .web-title{
@@ -112,5 +97,50 @@ section h2{
     }
     .div-style p{
         font-size: 1.25rem;
+    }
+}
+  
+/* medium devices: 767 > */
+@media (min-width: 767px){
+    .web-title{
+        font-size: 2.25rem;
+    }
+    /*Main sections*/
+    section h2{
+        font-size: 2rem;
+    }
+    .div-style p{
+        font-size: 1.4rem;
+    }
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px){
+    /* SEM NECESSIDADE DE ALTERAÇÃO*/
+}
+
+/* large devices: 1023 > */
+@media (min-width: 1023px){
+    section h2{
+        width: 100%;
+        text-align: left;
+        padding-left: 2rem;
+        font-size: 1.5rem;
+    }
+    .div-style{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        padding-bottom: 4rem;
+        align-items: center;
+    }
+    .div-style p{
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+    .div-style img{
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-bottom: 1rem;
     }
 }

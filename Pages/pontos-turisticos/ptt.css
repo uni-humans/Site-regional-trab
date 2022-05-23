@@ -41,6 +41,8 @@ main {
 
 .tpt{
     margin: 3rem 2rem 0rem 2rem ;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 .div-style{
@@ -53,12 +55,40 @@ main {
 .div-style img{
     width: 20rem;
     border-radius: 1rem;
-    align-items: center;
 }
 
 .div-style p{
     font-size: 1.25rem;
     text-align: center;
     line-height: 2rem;
+}
+
+.ret1{
+    display: flex;
     align-items: center;
+    text-align: center;
+}
+
+.ret2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.ret3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.ret4{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.ret5{
+    display: flex;
+    align-items: center;
+    text-align: center;
 }

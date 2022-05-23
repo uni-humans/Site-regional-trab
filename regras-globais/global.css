@@ -1,10 +1,11 @@
+/* -- REGRAS GLOBAIS -- */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 7px;
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar-track {
@@ -18,19 +19,25 @@
     background: #242424;
 }
 :root {
-    /*pagina*/
-    --white-background-color: #fff;
-    --gray-background-color: #242424;
-    --text-color: #fff;
-    /*detalhes*/
-    --link-color: #fff;
-    --tomato-color: tomato;
-    --hover-link-color: aqua;
+  --hue: 9;
+  
+  --header-background-color: hsl(var(--hue) 0% 10%);
+  --header-text-color: hsl(var(--hue) 100% 100%);
+  --logo-color: hsl(var(--hue) 100% 64%);
+  --background-color: hsl(var(--hue) 100% 100%);
+  --body-text-color: hsl(var(--hue) 0% 0%);
 }
+/* -- END -- */
+
+/* -- DARK MODE -- */
 .dark {
     --background-color: #000;
-}/*  */
+}
+/* -- END -- */
+
+
 h1{
+  color: var(--header-text-color);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
@@ -42,39 +49,54 @@ h2{
 p, a{
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
+    text-decoration: none;
 }
-/* Barra de navegação*/
-  #header-style {
-    color: var(--tomato-color);
-  }
-  #header-animation {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    transition: top 0.7s;
-    z-index: 3;
-  }
-  #header {
-    box-sizing: border-box;
-    height: 70px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--gray-background-color);
-    z-index: 2;
-  }
-  
-  #moon {
-    cursor: pointer;
-  }
-  #menu {
-    display: flex;
-    list-style: none;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  /*droopdown*/
+
+
+/* -- HEADER STYLES -- */
+#header-style {
+  color: var(--logo-color);
+}
+#header-animation {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.7s;
+  z-index: 3;
+}
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--header-background-color);
+  z-index: 2;
+}
+
+#menu a:hover{
+  color: var(--logo-color);
+  transition: all 0.3s ease;
+}
+
+#compass{
+  fill: var(--header-text-color);
+}
+#moon {
+  cursor: pointer;
+  fill: var(--header-text-color);
+}
+#moon:hover{
+  fill: var(--logo-color);
+}
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  align-items: center;
+}
+/* -- DROPDOWN MENU -- */
   .droopdown-grid-objeto:hover .droopdown-grid-items, .droopdown-grid-items:hover {
     visibility: visible;
     opacity: 1;
@@ -91,11 +113,10 @@ p, a{
     flex-direction: column;
     margin-top: 2.7em;
     padding-bottom: 10px;
-    background-color: var(--gray-background-color);
     border-radius: 0 0 0 15px;
     gap: 5px;
     box-sizing: border-box;
-    background-color: #242424;
+    background-color: var(--header-background-color);
     margin: 0;
     top: 4.3em;
   }
@@ -111,14 +132,9 @@ p, a{
     margin-top: .5em;
   }
   .droopdown-grid-items li a {
-    color: #fff;
-    text-decoration: none;
     transition: all 0.3s ease;
   }
-  .droopdown-grid-items li a:hover {
-    color: var(--hover-link-color);
-  }
-  /*end droopdown*/
+  /* -- END -- */
   
   
   #mobile-menu {
@@ -132,10 +148,11 @@ p, a{
     display: none;
   }
   #menu a {
-    color: black;
+    color: var(--header-text-color);
     text-decoration: none;
     font-family: sans-serif;
   }
+
   @media (max-width: 600px) {
     *:not(#moon) {
       margin: 0;
@@ -156,7 +173,7 @@ p, a{
       width: 100%;
       top: 70px;
       right: 0px;
-      background: var(--gray-background-color);
+      background: var(--header-background-color);
       transition: 0.6s;
       z-index: 1000;
       height: 0px;
@@ -187,6 +204,7 @@ p, a{
     #mobile-span {
       border-top: 2px solid;
       width: 20px;
+      color: var(--header-text-color);
     }
     #mobile-span::after, #mobile-span::before {
       content: '';
@@ -219,9 +237,11 @@ p, a{
       background: rgba(0, 0, 0, 0.05);
     }
   }
-/*footer grid*/
+/* -- END -- */
+
+/* -- FOOTER STYLES -- */
 footer {
-    background-color: var(--gray-background-color); 
+    background-color: var(--header-background-color); 
     padding: 50px 0;
 }
 footer ul {
@@ -233,15 +253,15 @@ footer ul {
 }
 .F-linha {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1rem;
 }
 .F-coluna {
-    width: 25%;
+    width: 50%;
     padding: 0 15px;
 }
 .F-coluna h1 {
-    color: var(--text-color);
+    color: var(--header-text-color);
     text-transform: capitalize;
     margin-bottom: 30px;
     position: relative;
@@ -253,64 +273,35 @@ footer ul {
     bottom: -5px;
     height: 2px;
     width: 40px;
-    background-color: red;
+    background-color: var(--logo-color);
     box-sizing: border-box;
 }
 .F-coluna ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 .F-coluna ul li a {
-    color: var(--text-color);
+    color: var(--header-text-color);
     text-decoration: none;
     text-transform: capitalize;
     display: block;
     transition: all 0.3s ease;
 }
 .F-coluna ul li {
-    color: var(--text-color);
+    color: var(--header-text-color);
     text-transform: capitalize;
     display: block;
 }
 .F-coluna ul li a:hover {
-    color: var(--hover-link-color);
+    color: var(--logo-color);
     padding-left: 10px;
 }
+
+.F-coluna p{
+  color: var(--header-text-color);
+}
+
 .F-logo {
     max-height: 150px;
     max-width: 150px;
 }
-/*responsividade index*/
- @media(max-width: 767px){
-    .F-coluna {
-        width: 50%;
-        margin-bottom: 30px;
-    } 
- }
- @media(max-width: 574px){
-    .F-coluna {
-        width: 100%;
-    }
- }
-
- /*responsividade cmt*/
- @media(max-width: 768px){
-    .div-style {
-        grid-auto-flow: row;
-    }
-    section h2 {
-        text-align: center;
-    }
-    .div-style p {
-        text-align: left;
-    }
- }
- @media(max-width: 550px){
-    .div-style {
-        justify-items: center;
-    }
- }
- @media(max-width: 768px){
-    .div-style p {
-        text-align: justify;
-}
- }
+/* -- END -- */

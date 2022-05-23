@@ -29,13 +29,14 @@ footer {
 }
 /*main*/
 main {
-    background-color: white; 
+    background-color: white;
 }
 
 .web-title{
+    color: var(--body-text-color);
     text-align: center;
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 7rem;
 }
 /*Main sections*/
 section h2{
@@ -70,11 +71,11 @@ section h2{
 
 .divider-1{
     height: 1px;
-    background: linear-gradient(90deg, rgba(137,62,149,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
 }
 
 .divider-2{
     height: 1px;
-    background: linear-gradient(270deg, rgba(137,62,149,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(270deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
 }
 

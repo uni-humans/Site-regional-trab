@@ -1,18 +1,19 @@
 //transição da barra de navegação
- var prevScrollpos = window.pageYOffset;
 
- window.onscroll = function() {
- var currentScrollPos = window.pageYOffset;
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
  
-   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header-animation").style.top = "0";
-  } else {
-    document.getElementById("header-animation").style.top = "-70px";
-   }
-   prevScrollpos = currentScrollPos;
- }
+if (prevScrollpos > currentScrollPos) {
+  document.getElementById("header-animation").style.top = "0";
+} else {
+  document.getElementById("header-animation").style.top = "-70px";
+}
+  prevScrollpos = currentScrollPos;
+}
 
- //mudar thema
+//mudar thema
 
 function moon() {
   var dark = document.body

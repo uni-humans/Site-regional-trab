@@ -67,12 +67,22 @@ p, a{
 #header {
   box-sizing: border-box;
   height: 70px;
+  width: 100%;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: var(--header-background-color);
   z-index: 2;
+}
+#header .header-h1{
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+#header .header-h1 svg{
+  padding-right: 0.15rem;
 }
 
 #menu a:hover{
@@ -154,10 +164,10 @@ p, a{
   }
 
   @media (max-width: 600px) {
-    *:not(#moon) {
+    header:not(#moon) {
       margin: 0;
       padding: 0;
-  }
+    }
   .landing {
     position: relative;
     top: 4.3em;

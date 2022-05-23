@@ -37,12 +37,15 @@ main {
     text-align: center;
     width: 100%;
     margin-top: 7rem;
+    font-size: 1.5rem;
 }
 /*Main sections*/
 section h2{
-    margin-left: 2rem;
+    width: 100%;
+    text-align: center;
     margin-bottom: 1rem;
     padding-top: 4rem;
+    font-size: 1.25rem;
 }
 
 .section-1{
@@ -50,23 +53,27 @@ section h2{
 }
 
 .div-style{
+    width: 100%;
     display: grid;
-    grid-auto-flow: column;
     gap: 1rem;
     align-items: center;
-    margin: 2rem 3rem 0rem 3rem;
     padding-bottom: 4rem;
+    align-items: center;
 }
 
 .div-style img{
     width: 20rem;
     border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .div-style p{
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
     line-height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .divider-1{
@@ -79,3 +86,31 @@ section h2{
     background: linear-gradient(270deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
 }
 
+/* large devices: 1023 > */
+@media (min-width: 1023px){
+
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px){
+
+}
+  
+/* medium devices: 767 > */
+@media (min-width: 767px){
+
+}
+
+/* medium devices: 400 > */
+@media (min-width: 400px){
+    .web-title{
+        font-size: 2rem;
+    }
+    /*Main sections*/
+    section h2{
+        font-size: 1.5rem;
+    }
+    .div-style p{
+        font-size: 1.25rem;
+    }
+}

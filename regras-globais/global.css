@@ -7,7 +7,6 @@
 ::-webkit-scrollbar {
     width: 5px;
     scroll-behavior: smooth;
-    scroll-snap-type: proximity;
 }
 ::-webkit-scrollbar-track {
     background: #bfbfbf;

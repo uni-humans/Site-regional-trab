@@ -30,3 +30,33 @@ footer {
 main {
     background-color: white; 
 }
+
+.web-title{
+    text-align: center;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.tpt{
+    margin: 3rem 2rem 0rem 2rem ;
+}
+
+.div-style{
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 3rem 0rem 3rem;
+    padding-bottom: 4rem;
+}
+
+.div-style img{
+    width: 20rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.div-style p{
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 2rem;
+    align-items: center;
+}

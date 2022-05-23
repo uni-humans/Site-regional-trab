@@ -323,19 +323,7 @@ footer ul {
 
 /* medium devices: 767 > */
 @media (min-width: 767px){
-  #header .header-h1{
-    font-size: 1.75rem;
-    margin-left: 0.5rem;
-  }
-  #header .header-h1 svg{
-    padding-right: 0rem;
-  }
-  #header ul li a{
-    font-size: 1.25rem;
-  }
-  #header ul div li a{
-    font-size: 1.25rem;
-  }
+  /* SEM NECESSIDADE DE ALTERAÇÃO*/
 }
 
 /* large devices: 992 > */

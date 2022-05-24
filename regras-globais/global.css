@@ -31,6 +31,13 @@
 /* -- END -- */
 
 /* -- DARK MODE -- */ /*funciona em modo toggle ou seja se clicar mais de uma vez ele volta ao que esta no root*/
+/* -- HTML SCROLL SUAVIZATION -- */
+html{
+  scroll-behavior: smooth;
+}
+/* -- END -- */
+
+/* -- DARK MODE -- */
 .dark {
     /*para ele entender oque tem que trocar a variavel precisa ter o mesmo nome como no cado do: --background-color que só muda a cord dada a ele*/
     --background-color: rgb(39, 39, 39); /* cor de fundo depois de clicar na lua */

@@ -25,14 +25,15 @@
   --header-text-color: hsl(var(--hue) 100% 100%);
   --logo-color: hsl(var(--hue) 100% 64%);
   --button-color: hsl(var(--hue) 100% 66%);
-  --background-color: hsl(var(--hue) 100% 100%);
   --body-text-color: hsl(var(--hue) 0% 0%);
+  --background-color: hsl(var(--hue) 100% 100%); /* cor de fundo antes de clicar na lua*/
 }
 /* -- END -- */
 
-/* -- DARK MODE -- */
+/* -- DARK MODE -- */ /*funciona em modo toggle ou seja se clicar mais de uma vez ele volta ao que esta no root*/
 .dark {
-    --background-color: rgb(39, 39, 39);
+    /*para ele entender oque tem que trocar a variavel precisa ter o mesmo nome como no cado do: --background-color que só muda a cord dada a ele*/
+    --background-color: rgb(39, 39, 39); /* cor de fundo depois de clicar na lua */
 }
 /* -- END -- */
 
@@ -105,6 +106,9 @@ p, a, figcaption{
   list-style: none;
   gap: 1rem;
   align-items: center;
+}
+.travel {
+  padding-left: .2em;
 }
 /* -- DROPDOWN MENU -- */
   .droopdown-grid-objeto:hover .droopdown-grid-items, .droopdown-grid-items:hover {

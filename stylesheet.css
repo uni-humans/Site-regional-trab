@@ -68,3 +68,133 @@ main {
 /*ideias
 masking css para logo
 */
+
+
+/*main*/
+main {
+    background-color: white;
+}
+
+.web-title{
+    color: var(--body-text-color);
+    text-align: center;
+    width: 100%;
+    margin-top: 7rem;
+    font-size: 1.5rem;
+}
+/*Main sections*/
+section h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 4rem;
+    font-size: 1.25rem;
+}
+
+.section-1{
+    background-color: hsl(0 0% 97%);
+}
+
+.div-style{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 4rem;
+    align-items: center;
+}
+
+.div-style iframe{
+    width: 20rem;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-style p{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.divider-1{
+    height: 1px;
+    background: linear-gradient(90deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
+}
+
+.divider-2{
+    height: 1px;
+    background: linear-gradient(270deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
+}
+
+/* medium devices: 400 > */
+@media (min-width: 400px){
+    .web-title{
+        font-size: 2rem;
+    }
+    /*Main sections*/
+    section h2{
+        font-size: 1.5rem;
+    }
+    .div-style p{
+        font-size: 1.25rem;
+    }
+    .div-style iframe{
+        width: 30rem;
+        border-radius: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+  
+/* medium devices: 767 > */
+@media (min-width: 767px){
+    .web-title{
+        font-size: 2.25rem;
+    }
+    /*Main sections*/
+    section h2{
+        font-size: 2rem;
+    }
+    .div-style p{
+        font-size: 1.4rem;
+    }
+}
+
+/* large devices: 992 > */
+@media (min-width: 900px){
+    .div-style iframe{
+        height: 20em;
+        width: 45rem;
+        border-radius: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* SEM NECESSIDADE DE ALTERAÇÃO*/
+}
+
+/* large devices: 1023 > */
+@media (min-width: 1023px){
+    section h2{
+        width: 100%;
+        text-align: left;
+        padding-left: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .div-style p{
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+    .div-style iframe{
+        height: 22em;
+        width: 70rem;
+        border-radius: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

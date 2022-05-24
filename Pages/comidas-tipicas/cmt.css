@@ -1,32 +1,4 @@
-/*modelo do cmt grid*/
-body {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"
-    ;
-    align-content: stretch;
-    justify-content: stretch;
-    overflow-x: hidden;
-}
-header {
-    grid-area: header;
-}
-.landing {
-    background-color: #242424; 
-    grid-area: landing;
-}
-main {
-    grid-area: main;
-}
-footer {
-    grid-area: footer;
-}
+
 /*main*/
 main {
     background-color: white;

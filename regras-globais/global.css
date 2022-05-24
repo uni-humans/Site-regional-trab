@@ -30,6 +30,12 @@
 }
 /* -- END -- */
 
+/* -- HTML SCROLL SUAVIZATION -- */
+html{
+  scroll-behavior: smooth;
+}
+/* -- END -- */
+
 /* -- DARK MODE -- */
 .dark {
     --background-color: rgb(39, 39, 39);

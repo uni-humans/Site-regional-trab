@@ -16,10 +16,6 @@ body {
 header {
     grid-area: header;
 }
-.landing {
-    background-color: #242424; 
-    grid-area: landing;
-}
 main {
     grid-area: main;
 }
@@ -30,67 +26,88 @@ footer {
 main {
     background-color: white; 
 }
-
 .web-title{
     color: var(--body-text-color);
     text-align: center;
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-top: 7rem;
     font-size: 1.5rem;
 }
 
-.tpt{
-    margin: 3rem 2rem 0rem 2rem ;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+.sub-title{
+    margin: 1.5rem 2rem 1rem 2rem ;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.ret1{
+    display: grid;
+    text-align: center;
+}
+
+.fileira1{
+    display: grid;
+    width: 100%;
 }
 
 .div-style{
     gap: 1rem;
     align-items: center;
-    margin: 2rem 3rem 0rem 3rem;
-    padding-bottom: 4rem;
-}
-
-.div-style img{
-    width: 20rem;
-    border-radius: 1rem;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .div-style p{
     font-size: 1.25rem;
     text-align: center;
     line-height: 2rem;
+    padding-bottom: 1.25rem;
 }
 
-.ret1{
-    display: flex;
-    align-items: center;
-    text-align: center;
+.div-style figure img{
+    width: 20rem;
+    border-radius: 1rem;
 }
 
-.ret2{
-    display: flex;
-    align-items: center;
-    text-align: center;
+.div-style figure figcaption{
+    padding-top: 0.5rem;
 }
 
-.ret3{
-    display: flex;
-    align-items: center;
-    text-align: center;
+.div-style figure figcaption a{
+    color: black;
+    background-color: var(--button-color);
+    padding: 0.3rem;
+    border: 0.15em solid black;
+    border-radius: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-.ret4{
-    display: flex;
-    align-items: center;
-    text-align: center;
+.div-style figure figcaption a:hover{
+    color: var(--header-text-color);
+    background-color: hsl(var(--hue) 100% 60%);
+    padding: 0.5rem;
 }
 
-.ret5{
-    display: flex;
-    align-items: center;
-    text-align: center;
+.divider-1{
+    height: 1px;
+    background: linear-gradient(90deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
+}
+.divider-2{
+    height: 1px;
+    background: linear-gradient(270deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
+}
+.divider-3{
+    height: 1px;
+    background: linear-gradient(90deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
+}
+.divider-4{
+    height: 1px;
+    background: linear-gradient(270deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
 }
 
 .img-pt:hover {
@@ -98,7 +115,105 @@ main {
     border-style: none;
     width: 100%;
     height: auto;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
+    transform: scale(0.8);
     transition: all 0.3s;
+}
+
+/* medium devices: 400 > */
+@media (min-width: 400px){
+    .web-title{
+        font-size: 2rem;
     }
+}
+  
+/* medium devices: 767 > */
+@media (min-width: 767px){
+    .web-title{
+        font-size: 2.25rem;
+    }
+    .sub-title{
+        font-size: 1.7rem;
+    }
+    .div-style p{
+        font-size: 1.5rem;
+    }
+    .div-style figure{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-style figure img{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        width: 70%;
+    }
+    .div-style figure figcaption a{
+        padding: 0.3rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px){
+    /* SEM NECESSIDADE DE ALTERAÇÃO*/
+}
+
+/* large devices: 1023 > */
+@media (min-width: 1023px){
+    .divider-1{
+        visibility: hidden;
+    }
+    .divider-2{
+        visibility: hidden;
+    }
+    .ret1{
+        display: flex;
+        width: 100%;
+        grid-auto-flow: column;
+    }
+    .fileira1{
+        width: 50%;
+    }
+    .fileira2{
+        width: 50%;
+    }
+    .web-title{
+        font-size: 2rem;
+    }
+    .sub-title{
+        font-size: 1.5rem;
+    }
+    .fileira1{
+        display: grid;
+        align-content: stretch;
+    }
+    .fileira2{
+        display: grid;
+        align-content: stretch;
+    }
+    .div-style{
+        display: grid;
+        align-content: stretch;
+        gap: 0rem;
+    }
+    .div-style p{
+        font-size: 1.25rem;
+    }
+    .div-style figure{
+        display: grid;
+        height: 100%;
+        align-content: stretch;
+    }
+    .div-style figure img{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        width: 50%;
+    }
+    .div-style figure figcaption a{
+        padding: 0.3rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}

@@ -24,6 +24,7 @@
   --header-background-color: hsl(var(--hue) 0% 10%);
   --header-text-color: hsl(var(--hue) 100% 100%);
   --logo-color: hsl(var(--hue) 100% 64%);
+  --button-color: hsl(var(--hue) 100% 66%);
   --background-color: hsl(var(--hue) 100% 100%);
   --body-text-color: hsl(var(--hue) 0% 0%);
 }
@@ -46,12 +47,11 @@ h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-p, a{
+p, a, figcaption{
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     text-decoration: none;
 }
-
 
 /* -- HEADER STYLES -- */
 #header-style {

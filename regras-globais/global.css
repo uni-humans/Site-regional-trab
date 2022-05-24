@@ -25,8 +25,10 @@
   --header-text-color: hsl(var(--hue) 100% 100%);
   --logo-color: hsl(var(--hue) 100% 64%);
   --button-color: hsl(var(--hue) 100% 66%);
+  --background-color: hsl(var(--hue) 100% 100%);
+  --background-color2: hsl(0 0% 97%);
   --body-text-color: hsl(var(--hue) 0% 0%);
-  --background-color: hsl(var(--hue) 100% 100%); /* cor de fundo antes de clicar na lua*/
+  --body-title-color: hsl(var(--hue) 0% 0%)
 }
 /* -- END -- */
 
@@ -39,8 +41,11 @@ html{
 
 /* -- DARK MODE -- */
 .dark {
-    /*para ele entender oque tem que trocar a variavel precisa ter o mesmo nome como no cado do: --background-color que só muda a cord dada a ele*/
-    --background-color: rgb(39, 39, 39); /* cor de fundo depois de clicar na lua */
+  --header-background-color: #121214;
+  --background-color: #09090a;
+  --background-color2: #131316;
+  --body-text-color: #d4d4d4;
+  --body-title-color: #e5e5ec;
 }
 /* -- END -- */
 
@@ -59,6 +64,14 @@ p, a, figcaption{
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     text-decoration: none;
+}
+
+p, a{
+  color: var(--body-text-color);
+}
+
+.web-title, h2{
+  color: var(--body-title-color);
 }
 
 /* -- HEADER STYLES -- */

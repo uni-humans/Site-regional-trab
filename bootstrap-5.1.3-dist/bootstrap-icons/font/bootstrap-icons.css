@@ -484,7 +484,7 @@ url("./fonts/bootstrap-icons.woff?524846017b983fc8ded9325d94ed40f3") format("wof
 .bi-columns::before { content: "\f2ce"; }
 .bi-command::before { content: "\f2cf"; }
 .bi-compass-fill::before { content: "\f2d0"; }
-.bi-compass::before { content: "\f2d1"; }
+.bi-compass::before { content: "\f2d1";}
 .bi-cone-striped::before { content: "\f2d2"; }
 .bi-cone::before { content: "\f2d3"; }
 .bi-controller::before { content: "\f2d4"; }

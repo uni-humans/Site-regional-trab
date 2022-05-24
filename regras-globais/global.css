@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+#moon{
+  box-sizing: content-box;
+}
 ::-webkit-scrollbar {
     width: 7px;
     scroll-behavior: smooth;

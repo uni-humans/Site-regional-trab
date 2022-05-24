@@ -79,10 +79,7 @@ section h2{
     padding-top: 4rem;
     font-size: 1.25rem;
 }
-section {
-    margin: 0 6em;
-    border-radius: 20px;
-}
+
 .section-1{
     background-color: hsl(0 0% 97%);
 }
@@ -120,7 +117,9 @@ section {
     height: 1px;
     background: linear-gradient(270deg, var(--logo-color) 0%, rgba(255,255,255,0) 100%);
 }
-
+section {
+    border-radius: 2rem;
+}
 
 /* medium devices: 400 > */
 @media (min-width: 400px){
@@ -141,6 +140,7 @@ section {
         margin-right: auto;
     }
     
+    
 }
   
 /* medium devices: 767 > */
@@ -155,6 +155,11 @@ section {
     .div-style p{
         font-size: 1.4rem;
     }
+    section {
+        margin: 0 6em;
+        border-radius: 2rem;
+    }
+    
 }
 
 /* large devices: 992 > */

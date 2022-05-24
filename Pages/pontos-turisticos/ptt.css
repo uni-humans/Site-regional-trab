@@ -18,13 +18,10 @@ header {
 }
 main {
     grid-area: main;
+    background-color: var(--background-color);
 }
 footer {
     grid-area: footer;
-}
-/*main*/
-main {
-    background-color: white; 
 }
 .web-title{
     color: var(--body-text-color);
@@ -45,6 +42,12 @@ main {
 .ret1{
     display: grid;
     text-align: center;
+    background-color: var(--background-color);
+}
+.ret2{
+    display: grid;
+    text-align: center;
+    background-color: var(--background-color2);
 }
 
 .fileira1{
@@ -168,6 +171,11 @@ main {
         visibility: hidden;
     }
     .ret1{
+        display: flex;
+        width: 100%;
+        grid-auto-flow: column;
+    }
+    .ret2{
         display: flex;
         width: 100%;
         grid-auto-flow: column;

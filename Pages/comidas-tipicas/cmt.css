@@ -2,6 +2,7 @@
 /*main*/
 main {
     background-color: white;
+    background-color: var(--background-color);
 }
 
 .web-title{
@@ -22,6 +23,7 @@ section h2{
 
 .section-1{
     background-color: hsl(0 0% 97%);
+    background-color: var(--background-color2);
 }
 
 .div-style{
